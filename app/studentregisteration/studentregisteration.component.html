@@ -1,0 +1,14 @@
+
+selected rollno:{{viewrollno.srollno}}
+<br/>
+Selected author:{{viewname.sname}}
+<br/>
+selected publisher:{{viewbatch.sbatch}}
+<br/>
+selected publisher:{{viewdepartment.sdepartment}}
+<br/>
+selected publisher:{{viewimage.simage}}
+<br/>
+<app-student [rollno]="item.rollno" 
+[name]="item.name" [batch]="item.batch" [image]="item.image" *ngFor="let item of StudentDetails"(sendstudent)="addStudent($event)">
+</app-student>

@@ -3,24 +3,24 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProfileComponent } from './profile/profile.component';
-import { LinkComponent } from './link/link.component';
 import { HeaderComponent } from './header/header.component';
-import { ServiceService} from './service.service';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { BookComponent } from './book/book.component';
+import { BooklistComponent } from './booklist/booklist.component';
+import { StudentComponent } from './student/student.component';
+import { StudentregisterationComponent } from './studentregisteration/studentregisteration.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileComponent,
-    LinkComponent,
-    HeaderComponent
+    HeaderComponent,
+    BookComponent,
+    BooklistComponent,
+    StudentComponent,
+    StudentregisterationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
